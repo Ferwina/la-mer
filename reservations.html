@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Reservations — la mer et la terre</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    <!-- jQuery -->
+    <script src=”//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js”></script>
+
+    <!-- Custom Font -->
+    <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
+
+    <!-- Custom CSS -->
+    <link href="reservations.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons//favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Date Picker -->
+    <!-- Special version of Bootstrap that only affects content wrapped in .bootstrap-iso -->
+    <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+    
+    <!--Font Awesome (added because you use icons in your prepend/append)-->
+    <link rel="stylesheet" href="https://formden.com/static/cdn/font-awesome/4.4.0/css/font-awesome.min.css" />
+    
+    <!-- Inline CSS based on choices in "Settings" tab -->
+    
+    <style>
+        .bootstrap-iso .form-group button,
+        .bootstrap-iso form input.form-control,
+        .bootstrap-iso form textarea.form-control,
+        .bootstrap-iso form select.form-control {
+            -webkit-border-radius: 0 !important;
+            -moz-border-radius: 0;
+            border-radius: 0;
+        }
+    
+        .bootstrap-iso .formden_header h2,
+        .bootstrap-iso .formden_header p,
+        .bootstrap-iso form {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #000000
+        }
+    
+        .bootstrap-iso form button,
+        .bootstrap-iso form button:hover {
+            color: #ffffff !important;
+        }
+    
+        .bootstrap-iso .btn-custom {
+            background: #8e2b2b
+        }
+    
+        .bootstrap-iso .btn-custom:hover {
+            background: #7a1717;
+        }
+    
+        .asteriskField {
+            color: red;
+        }
+    
+        .bootstrap-iso form .input-group-addon {
+            color: #555555;
+            background-color: #eeeeee;
+            border-radius: 0px;
+            padding-left: 12px
+        }
+    </style>
+
+  
+</head>
+
+<body>
+
+    <header class="top">
+
+        <!-- ************************ PAGE BORDER ************************ -->
+        <div id="left-border"></div>
+        <div id="right-border"></div>
+        <div id="top-border"></div>
+        <div id="bottom-border"></div>
+
+        <!-- ************************ NAVIGATION ************************ -->
+        <nav>
+            <div class="clearfix">
+                <a href="index.html" class="float-left">HOME
+                </a>
+                <a href="philosophy.html" class="float-left">
+                    PHILOSOPHY
+                </a>
+                <a href="menu.html" class="float-left">MENU
+                </a>
+
+                <a href="contact.html" class="float-right">CONTACT
+                </a>
+                <a href="recognition.html" class="float-right">
+                    RECOGNITION
+                </a>
+                <a href="reservations.html" class="float-right"><u>RESERVATIONS</u>
+                </a>
+            </div>
+        </nav>
+        <!-- NAV end -->
+
+        <a href="index.html">
+            <h1 id="nav-logo" class="Serif text-center">la <u>m</u>ere et la <u>t</u>erre</h1>
+        </a>
+
+    </header>
+
+    <!-- ************************ Form Input ************************ -->
+
+    <div class="container text-center img-fluid" id="coordinates">
+        <img src="img/coordinates.png" alt="Restaurant Coordinates" width="100%" height="100%">
+        <br/>
+        <p class="row-text Sans-Medium" id="location">Belvedere Castle, Central Park
+            <br>79th St Transverse, New York, NY 10021</p>
+    </div>
+    
+    
+    <p class="res-text Sans-Regular" id="wrapper">Please inquire about reservations at least two weeks in advance by using the form below. For reservations within the coming
+        week, or for larger than four, please call us. We will call you to confirm your reservation at least 24 hours prior to
+        your reservation.</p>
+    
+    <div id="container">
+
+<!-- HTML Form (wrapped in a .bootstrap-iso div) -->
+    <div class="bootstrap-iso" id="dateandtime">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12" id="dateposition">
+                    <form method="post">
+                        <div class="form-row">
+                            <div class="form-group ">
+                                <label class="control-label" for="date" id="datesize">Date</label>
+                                <div class="input-group" id="dateinput">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-calendar"></i>
+                                    </div>
+                                    <input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="text" />
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                <label class="control-label " for="date" id="timesize">
+                                    Time
+                                </label>
+                                <input type="text" name="time" id="timeinput" placeholder="* Reservation Time" oninvalid="this.setCustomValidity('What time you would like to meet us?')"
+                                    oninput="setCustomValidity('')" required>
+                            </div>
+                        </div>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <form action="http://www.google.com/search" method="get">
+        
+       
+        
+            <div class="form-row"> <!-- FIRST & LAST NAME Row -->
+        
+                <div class="form-group col-md-6">
+                    <!-- First Name -->
+                    <label for="yourname">First Name</label>
+                    <input type="name" name="firstname" id="firstname" placeholder="* Please enter your First Name" oninvalid="this.setCustomValidity('Please enter in your first name')"
+                        oninput="setCustomValidity('')" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <!-- Last Name -->
+                    <label for="yourname">Last Name</label>
+                    <input type="name" name="lastname" id="lastname" placeholder="* Please enter your Last Name" oninvalid="this.setCustomValidity('Please enter in your last name')"
+                        oninput="setCustomValidity('')" required>
+                </div>
+            </div>
+        
+            <div class="form-group"> <!-- EMAIL Row -->
+                <label for="emailinfo">Email</label>
+                <input type="email" name="emailinfo" id="emailinfo" placeholder=" * Please enter your Email Address" oninvalid="this.setCustomValidity('Please enter in your email address')"
+                    oninput="setCustomValidity('')" required>
+        
+            </div>
+        
+            <div class="form-group"> <!-- TELEPHONE Row -->
+                <label for="telephone">Telephone</label>
+                <input type="tel" name="telephone" id="telephone" placeholder=" * Please enter your Telephone Number" pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <!-- COMMENTS Row -->
+                <label for="myComments">Comments</label>
+                <textarea id="myComments" name="myComments" placeholder="Place your comments here (Optional)"></textarea>
+            </div>
+            
+            <input type="submit" value="SUBMIT">
+
+        </form>
+        
+        </div>
+    
+  
+    <div id="disclaimer">
+        <div class="Sans-Regular text-muted" id="cancel">
+            <p>* Gratuities are not expected or accepted at
+                <i>La <u>M</u>er et La <u>T</u>erre</i>. Reflecting the Japanese custom, exceptional hospitality is an integral part of the
+                <i>La <u>M</u>er et La
+                    <u>T</u>erre</i> dining experience and is provided to every guest. Both cash and credit card gratuities will be
+                respectfully declined. Corkage not available.</p>
+            <p>* Please be advised of our Cancellation Policy should you need to cancel, change your reservation date, or decrease the
+                number of guests. For parties up to 4 guests, cancellations must be made at least 48 hours prior to the reservation
+                date, to avoid a $200 per person charge. For parties of 5 or more, cancellations must be made at least one week (7
+                days) prior to the reservation date to avoid losing your deposit. If a deposit has not been received, a $200 per
+                person charge will be made to the credit card on file.</p>
+        </div>
+    </div>
+        
+
+     <!-- ************************ FOOTER ************************ -->
+
+    <footer id="footer">
+        <div class="container">
+            <p class="sitemap clearfix">
+                <!-- SITEMAP IN FOOTER -->
+                <!-- HOME -->
+                <a href="index.html">HOME</a> &nbsp;•&nbsp;
+                <!-- PHILOSOPHY -->
+                <a href="philosophy.html">PHILOSOPHY</a> &nbsp;•&nbsp;
+                <!-- MENU -->
+                <a href="menu.html">MENU</a> &nbsp;•&nbsp;
+                <!-- RESERVATIONS -->
+                <a href="reservations.html"><u>RESERVATIONS</u></a> &nbsp;•&nbsp;
+                <!-- RECOGNITION -->
+                <a href="recognition.html">RECOGNITION</a> &nbsp;•&nbsp;
+                <!-- CONTACT -->
+                <a href="contact.html">CONTACT</a>
+            </p>
+            <br/>
+            
+                <a href="index.html">
+                    <h3 class="footer-logo Serif">la <u>m</u>er et la <u>t</u>erre</h3>
+                    <p class="footer-ny Serif">NEW YORK</p>
+                </a>
+
+            <p class="copyright text-muted Serif">&nbsp; la mer et la terre &copy; 2017</p>
+        </div>
+        <a id="to-top" href="#top" class="btn btn-dark btn-lg js-scroll-trigger">
+            <i class="fa fa-chevron-up fa-fw fa-1x"></i>
+        </a>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/stylish-portfolio.js"></script>
+
+    <!-- Date Picker -->
+    <script src="date-picker.js"></script>
+
+    <!-- Extra JavaScript/CSS added manually in "Settings" tab -->
+<!-- Include jQuery -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!-- Include Date Range Picker -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+
+<script>
+    $(document).ready(function(){
+        var date_input=$('input[name="date"]'); //our date input has the name "date"
+        var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+        date_input.datepicker({
+            format: 'mm/dd/yyyy',
+            container: container,
+            todayHighlight: true,
+            autoclose: true,
+        })
+    })
+</script>
+
+</body>
+
+</html>

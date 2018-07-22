@@ -1,0 +1,455 @@
+/*--------------------- CUSTOM FONT: M+1M Font Family ----------------------- */
+
+@font-face { /* M+1M Font in THIN */
+    font-family: 'M+1MThin';
+    src: url('fonts/mplus-1m-thin-webfont.eot');
+    src: url('fonts/mplus-1m-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/mplus-1m-thin-webfont.woff') format('woff'),
+         url('fonts/mplus-1m-thin-webfont.ttf') format('truetype'),
+         url('fonts/mplus-1m-thin-webfont.svg#M+1MThin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face { /* M+1M Font in LIGHT */
+    font-family: 'M+1MLight';
+    src: url('fonts/mplus-1m-light-webfont.eot');
+    src: url('fonts/mplus-1m-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/mplus-1m-light-webfont.woff') format('woff'),
+         url('fonts/mplus-1m-light-webfont.ttf') format('truetype'),
+         url('fonts/mplus-1m-light-webfont.svg#M+1Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face { /* M+1M Font in REGULAR */
+    font-family: 'M+1MRegular';
+    src: url('fonts/mplus-1m-regular-webfont.eot');
+    src: url('fonts/mplus-1m-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/mplus-1m-regular-webfont.woff') format('woff'),
+         url('fonts/mplus-1m-regular-webfont.ttf') format('truetype'),
+         url('fonts/mplus-1m-regular-webfont.svg#M+1MRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face { /* M+1M Font in MEDIUM */
+    font-family: 'M+1MMedium';
+    src: url('fonts/mplus-1m-medium-webfont.eot');
+    src: url('fonts/mplus-1m-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/mplus-1m-medium-webfont.woff') format('woff'),
+         url('fonts/mplus-1m-medium-webfont.ttf') format('truetype'),
+         url('fonts/mplus-1m-medium-webfont.svg#M+1MMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face { /* M+1M Font in BOLD */
+    font-family: 'M+1MBold';
+    src: url('fonts/mplus-1m-bold-webfont.eot');
+    src: url('fonts/mplus-1m-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/mplus-1m-bold-webfont.woff') format('woff'),
+         url('fonts/mplus-1m-bold-webfont.ttf') format('truetype'),
+         url('fonts/mplus-1m-bold-webfont.svg#M+1MBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.Serif {
+  font-family: 'Lusitana', 'Baskerville', 'Bodoni', 'Times New Roman', serif;
+}
+.Sans-Thin {
+  font-family: 'M+1MThin', 'Roboto Condensed', 'Helvetica Neue Condensed', 'Helvetica', 'Arial', sans-serif;
+  letter-spacing: .03em;
+}
+.Sans-Light, .Sans {
+  font-family: 'M+1MLight', 'Roboto Condensed', 'Helvetica Neue Condensed', 'Helvetica', 'Arial', sans-serif;
+  letter-spacing: .03em;
+}
+.Sans-Regular {
+  font-family: 'M+1MRegular', 'Roboto Condensed', 'Helvetica Neue Condensed', 'Helvetica', 'Arial', sans-serif;
+  letter-spacing: .03em;
+}
+.Sans-Medium {
+  font-family: 'M+1MMedium', 'Roboto Condensed', 'Helvetica Neue Condensed', 'Helvetica', 'Arial', sans-serif;
+  letter-spacing: .03em;
+}
+.Sans-Bold {
+  font-family: 'M+1MBold', 'Roboto Condensed', 'Helvetica Neue Condensed', 'Helvetica', 'Arial', sans-serif;
+}
+
+p {
+  letter-spacing: .03em;
+  line-height: 1.3em;
+}
+b {
+  font-family: 'M+1MBold', 'DIN Condensed', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+h1 {
+  font-size: 2em;
+  line-height: 2em;
+  letter-spacing: .03em;
+}
+h2 {
+  font-size: 1.7em;
+}
+h3 {
+  font-size: 1.2em;
+  margin: 0 4em;
+}
+h5 {
+  font-size: 1.27em;
+}
+body {
+  background-color: white;
+  position: absolute;
+}
+
+/*--------------------- End of CUSTOM FONT: M+1M Font Family ----------------------- */
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'M+1MThin', 'M+1MLight', 'M+1MRegular', 'M+1MMedium', 'M+1MBold', 'Lusitana', 'DIN Condensed', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  background: url(img/ocean.jpg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border: 1em solid white;
+  position: relative;
+}
+
+section {
+  background-color: white;
+}
+
+.text-vertical-center {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.text-vertical-center h1 {
+  font-size: 4.5em;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* ------------------ BACKGROUND VIDEO (HOME PAGE TOP) ---------------------- */
+
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+#video-background {
+  /*  Video Fullscreen  */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  z-index: -99;
+}
+
+span.video-background {
+  background: url(img/ocean.jpg) no-repeat center center scroll;
+  filter: ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: -100;
+}
+
+
+/* -------------------------- NAVIGATION --------------------------- */
+
+nav {
+  z-index: 2;
+  font-size: 1em;
+}
+.clearfix {
+  font-family: 'M+1MRegular' ,'DIN Condensed', 'Droid Sans', 'Roboto Condensed', 'Helvetica Neue Condensed', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 200;
+  letter-spacing: .07em;
+  margin: 1.4em 1em .5em;
+  color: #fff;
+  font-size: 1em;
+}
+.float-left,.float-right {
+  padding: 0 .5em;
+}
+
+#navbar a {
+  color: #fff;
+}
+#navbar a:hover {
+  color: #ffc53d;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .clearfix a {
+    width: 100%
+  }
+}
+
+/* -------------------------- HEADER (NAV CENTER) --------------------------- */
+
+.header {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: table;
+}
+
+/* -------------------------- (BIG LOGO CENTER) --------------------------- */
+
+
+#bottom {
+  width: 100%;
+  margin-right: 1em;
+  display: table;
+  border: none;
+  float: none;
+  margin-bottom: 1em;
+  margin-top: 2.1em;
+}
+#big-logo {
+  margin-top: 300px;
+  position: relative;
+}
+#michstars {
+  display: block;
+  margin: 0 50% 0 35%;
+  position: absolute;
+  bottom: 0;
+}
+
+/* ------------------------ LINK + LINK HOVER ------------------------- */
+a:link {   /* unvisited link */
+    color: black;
+}
+a:visited { /* visited link */
+    color: black;
+}
+a:hover {   /* hover over link */
+    color: #ffc53d;
+    text-decoration: underline;
+    font-weight: 500;
+    font-family: 'M+1MMedium' ,'DIN Condensed', 'Droid Sans', 'Roboto Condensed', 'Helvetica Neue Condensed', 'Helvetica', 'Arial', sans-serif;
+}
+.btn:hover {
+  background-color: #ffc53d;
+  color: #ffffff;
+}
+
+/* ----------------------------- COORDINATES -------------------------------- */
+
+#coordinates {
+  width: 100%;
+  display: table;
+  margin: 4em auto;
+  padding: 7%;
+  position: static;
+}
+
+/* -------------------------------- Map and Gallery -------------------------------- */
+.grayscale {
+  margin: 10px;
+  padding: 0;
+}
+/* -------------------------------- FOOTER -------------------------------- */
+
+footer {
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: .1em;
+}
+#footer  {
+  display: table;
+  width: 100%;
+}
+footer .sitemap {
+  margin: 0 2.5em;
+  line-height: 1.6em;
+  color: #000000;
+}
+footer .footer-logo {
+  text-transform: lowercase;
+  font-size: 120%;
+}
+footer .footer-ny {
+  letter-spacing: .4em;
+  font-size: .5em;
+  line-height: 2em;
+}
+footer .copyright {
+  font-size: 65%;
+}
+
+@media only screen and (max-width: 30em) {
+  footer {
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+  }
+}
+
+/* ------------------- GO BACK TO THE TOP BUTTON ------------------- */
+#to-top {
+  font-size: .8em;
+  position: fixed;
+  right: 5px;
+  bottom: 5px;
+  display: inline;
+  padding: .7em .8em;
+  margin: 1.9em; 
+  z-index: 2;
+  color: white;
+  opacity: .65;
+  border: none;
+  float: right;
+}
+
+/* ------------------------------ TABLE -------------------------------- */
+table {
+  display: inline-table;
+  text-align: center;
+  height: auto;
+  width: 100%;
+  margin: auto;
+}
+td {
+  width: 50%;
+  padding: 0;
+}
+td #gallery {
+  padding-top: 0;
+}
+
+/* -------------------------------- MAP ------------------------------------ */
+
+
+#map {
+  width: auto;
+  height: 100;
+  margin: auto;
+  background-color: white;
+  vertical-align: top;
+  padding-top: 1em;
+  padding-right: .5em;
+}
+.map iframe {
+  pointer-events: none;
+  height: 500px;
+  width: 100%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+iframe {
+   display: static;
+}
+
+@media(max-width:768px) {
+  .map {
+    height: 70%;
+    width: 50%;
+    margin: 0;
+    padding: 1em;
+  }
+}
+
+span .twocol {
+  background-color: white;
+  display: inline-table;
+}
+/* ----------------------------- GALLERY ----------------------- */
+
+#gallery {
+  vertical-align: top;
+  padding-top: .4em;
+  padding-left: .5em;
+}
+.gallery {
+  width: 100%;
+  height: 100%;
+  float: right;
+  display: inline-table;
+  margin: auto;
+  vertical-align: top;
+}
+.gallery-item {
+  height: auto;
+  padding: 0 .5em;
+}
+
+@media(min-width: 768px) {
+  td {
+    padding: 0;
+  }
+}
+
+.container.gallery-container {
+    background-color: #fff;
+    color: #35373a;
+    min-height: 100vh;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+}
+.gallery-container h1 {
+    text-align: center;
+    margin-top: 70px;
+    font-weight: bold;
+}
+.gallery-container p.page-description {
+    text-align: center;
+    max-width: 800px;
+    margin: 25px auto;
+    color: #888;
+    font-size: 18px;
+}
+.tz-gallery {
+    background-color: white;
+    display: block;
+    vertical-align: top;
+}
+.tz-gallery .lightbox img {
+    width: 100%;
+    margin-bottom: 1em;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+.tz-gallery .lightbox img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+.tz-gallery img {
+    border-radius: 4px;
+}
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+/* NEXT */
+
+.border-home {
+  border: 7em 1em solid white;  
+}
+

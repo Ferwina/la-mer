@@ -1,0 +1,499 @@
+/*--------------------- CUSTOM FONT: M+1M Font Family ----------------------- */
+
+@font-face { /* M+1M Font in THIN */
+	font-family: 'M+1MThin';
+	src: url('fonts/mplus-1m-thin-webfont.eot');
+	src: url('fonts/mplus-1m-thin-webfont.eot?#iefix') format('embedded-opentype'),
+			 url('fonts/mplus-1m-thin-webfont.woff') format('woff'),
+			 url('fonts/mplus-1m-thin-webfont.ttf') format('truetype'),
+			 url('fonts/mplus-1m-thin-webfont.svg#M+1MThin') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face { /* M+1M Font in LIGHT */
+	font-family: 'M+1MLight';
+	src: url('fonts/mplus-1m-light-webfont.eot');
+	src: url('fonts/mplus-1m-light-webfont.eot?#iefix') format('embedded-opentype'),
+			 url('fonts/mplus-1m-light-webfont.woff') format('woff'),
+			 url('fonts/mplus-1m-light-webfont.ttf') format('truetype'),
+			 url('fonts/mplus-1m-light-webfont.svg#M+1Light') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face { /* M+1M Font in REGULAR */
+	font-family: 'M+1MRegular';
+	src: url('fonts/mplus-1m-regular-webfont.eot');
+	src: url('fonts/mplus-1m-regular-webfont.eot?#iefix') format('embedded-opentype'),
+			 url('fonts/mplus-1m-regular-webfont.woff') format('woff'),
+			 url('fonts/mplus-1m-regular-webfont.ttf') format('truetype'),
+			 url('fonts/mplus-1m-regular-webfont.svg#M+1MRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face { /* M+1M Font in MEDIUM */
+	font-family: 'M+1MMedium';
+	src: url('fonts/mplus-1m-medium-webfont.eot');
+	src: url('fonts/mplus-1m-medium-webfont.eot?#iefix') format('embedded-opentype'),
+			 url('fonts/mplus-1m-medium-webfont.woff') format('woff'),
+			 url('fonts/mplus-1m-medium-webfont.ttf') format('truetype'),
+			 url('fonts/mplus-1m-medium-webfont.svg#M+1MMedium') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face { /* M+1M Font in BOLD */
+	font-family: 'M+1MBold';
+	src: url('fonts/mplus-1m-bold-webfont.eot');
+	src: url('fonts/mplus-1m-bold-webfont.eot?#iefix') format('embedded-opentype'),
+			 url('fonts/mplus-1m-bold-webfont.woff') format('woff'),
+			 url('fonts/mplus-1m-bold-webfont.ttf') format('truetype'),
+			 url('fonts/mplus-1m-bold-webfont.svg#M+1MBold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.Serif {
+font-family: 'Lusitana', 'Baskerville', 'Bodoni', 'Times New Roman', serif;
+}
+.Sans-Thin {
+font-family: 'M+1MThin', 'Roboto Condensed', 'Helvetica Neue Condensed', 'Helvetica', 'Arial', sans-serif;
+}
+.Sans-Light, .Sans {
+font-family: 'M+1MLight', 'Roboto Condensed', 'Helvetica Neue Condensed', 'Helvetica', 'Arial', sans-serif;
+}
+.Sans-Regular {
+font-family: 'M+1MRegular', 'Roboto Condensed', 'Helvetica Neue Condensed', 'Helvetica', 'Arial', sans-serif;
+}
+.Sans-Medium {
+font-family: 'M+1MMedium', 'Roboto Condensed', 'Helvetica Neue Condensed', 'Helvetica', 'Arial', sans-serif;
+}
+.Sans-Bold {
+font-family: 'M+1MBold', 'Roboto Condensed', 'Helvetica Neue Condensed', 'Helvetica', 'Arial', sans-serif;
+}
+
+p {
+letter-spacing: .025em;
+font-size: 1em;
+
+}
+#wrapper {
+	margin: auto;
+	max-width: 60%;
+	display: block;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 3em;
+	
+
+}
+b {
+font-family: 'M+1MBold', 'DIN Condensed', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+h1 {
+font-size: 2em;
+line-height: 2em;
+letter-spacing: .03em;
+}
+
+h3 {
+font-size: 1.2em;
+margin: 0 4em;
+}
+
+body #container {
+	margin-top: 4em;
+	margin-left: 10em;
+	margin-right: 10em;
+	margin-bottom: 2em;
+	
+}
+
+#location {
+	padding-top: -5em;
+	margin: auto;
+	max-width: 60%;
+	display: block;
+	padding-left: 1em;
+	padding-right: 1em;
+	color: rgb(2, 52, 94);
+}
+
+#timesize input,textarea {
+	border-top: none;
+	border-right: none;
+	border-bottom: .18em solid black;
+	border-left: none;
+	width: 100%;
+}
+
+/* ------------------------ PAGE BORDER ------------------------- */
+#top-border, #bottom-border, #left-border, #right-border {
+background: #1C3145;
+position: fixed;
+z-index: 5;
+}
+#left-border, #right-border {
+	top: 0; 
+	bottom: 0;
+	width: 1em;
+}
+#left-border { left: 0; }
+#right-border { right: 0; }
+	
+#top-border, #bottom-border {
+left: 0; right: 0;
+height: 15px;
+}
+#top-border { top: 0; }
+#bottom-border { bottom: 0; }
+
+/* ------------------------ NAVIGATION BAR ------------------------- */
+
+nav {
+z-index: 2;
+}
+
+.clearfix {
+font-family: 'M+1MRegular' ,'DIN Condensed', 'Droid Sans', 'Roboto Condensed', 'Helvetica Neue Condensed', 'Helvetica', 'Arial', sans-serif;
+font-weight: 200;
+letter-spacing: .07em;
+margin: 2.4em 2em .5em;
+}
+.float-left,.float-right {
+background-color: white;
+padding: 0 .5em;
+}
+
+#nav-logo {
+z-index: 1;
+display: block;
+top: 0;
+height: auto;
+width: 100%;
+padding-bottom: 1.4em;
+font-size: 1.5em;
+}
+
+@media only screen and (max-width: 37.5em) {
+.clearfix a {
+	width: 100%
+}
+}
+
+/* --------------------------- Coordinates ------------------------------ */
+
+#coordinates {
+  width: 100%;
+  display: table;
+  padding: 0 10%;
+  position: static;
+}
+
+/* --------------------------- Description Style ------------------------------ */
+#numbers {
+	margin: auto;
+	display: inline-block;
+	font-family: 'M+1MMedium', 'Roboto Condensed', 'Helvetica Neue Condensed', 'Helvetica', 'Arial', sans-serif;
+	font-size: 1.5em;
+}
+#cancel {
+	font-size: .7em;
+	margin: auto;
+	max-width: 60%;
+	display: block;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-bottom: 5em;
+	padding-top: 3em;
+}
+#disclaimer {
+	display: inline-table;
+	margin: 0 2.5em;
+}
+input, textarea {
+	font-family: 'M+1MRegular', 'Roboto Condensed', 'Helvetica Neue Condensed', 'Helvetica', 'Arial', sans-serif;
+	font-size: .8em;
+	letter-spacing: .03em;
+}
+
+/* --------------------------- Form Input Style------------------------------ */
+/*
+input, textarea
+{
+	display:block;
+	width: 100%;
+	height:3.5em;
+	margin-bottom: 1em;
+	float:left;
+}
+
+input#yourname:focus:valid,
+input#emailinfo:focus:valid,
+input#telephone:focus:valid
+
+{background: rgb(245, 245, 140) url(yes.png) right/contain no-repeat;}
+
+input#yourname:focus:invalid,
+input#emailinfo:focus:invalid,
+input#telephone:focus:invalid
+
+{background: url(no.png) right/contain no-repeat; outline:0; border:1px thin #4697e4;}
+
+input[type='submit'] {
+	
+	color:black;
+	float:none;
+	display: inline;
+	font-size: 1.1em;
+	height:3em;
+	width:7em;
+}
+
+textarea {height:10em;}
+
+label {display: block;
+	   font-size: 1em;
+		margin-top:1em;} */
+
+
+/* ------------------ Table Styles ------------------
+th {
+	font-size: 1.5em;
+	text-transform: uppercase;
+	text-align: left;
+}
+.yourname {
+	border-top: .2em solid white;
+	border-right: .2em solid white;	
+	border-bottom: .2em solid black;
+	border-left: .2em solid white;	
+}
+.first-name,.last-name {
+	text-transform: uppercase;
+	text-align: left;
+	border-top: .2em solid white;
+	border-right: .2em solid white;	
+	border-bottom: .2em solid black;
+	border-left: .2em solid white;	
+}
+table {
+	width: 10em;
+	height: 100%;
+	margin: auto;
+	min-width: 100%;
+	min-height: 100%;
+	border: .2em black solid;
+	border-collapse: collapse;
+}
+table, th, td {
+	border:none;
+ } */
+
+
+/* Styles for form */
+
+input, textarea
+{
+	display:table;
+	width: 100%;
+	height:2.5em;
+	margin-bottom: 1em;
+	float:left;
+
+}
+
+input#timeinput:focus:valid,
+input#firstname:focus:valid,
+input#lastname:focus:valid,
+input#emailinfo:focus:valid,
+input#telephone:focus:valid
+
+{background: rgb(255, 255, 255) url(img/yes.png) right/contain no-repeat;}
+
+input#timeinput:focus:invalid,
+input#firstname:focus:invalid,
+input#lastname:focus:invalid,
+input#emailinfo:focus:invalid,
+input#telephone:focus:invalid
+
+{background: url(img/no.png) right/contain no-repeat; outline:0; border:1px thin #4697e4;}
+
+
+input[type='submit'] {
+	background-color:#ffffff;
+	border: solid 1px black;
+	border-radius: 0;
+	color:black;
+	float: right;
+	height: 2.2em;
+	width: 4.5em;
+	position: relative;
+	display: block;
+	font-size: 1em;
+}
+input[type='submit']:hover {
+	background: black;
+	color: white;
+}
+
+input,textarea {
+	border-top: none;
+	border-right: none;
+	border-bottom: .18em solid black;
+	border-left: none;
+	width: 100%;
+}
+
+#myComments {
+	height: 6em;
+	display: block;
+	
+	width: 100%;
+}
+
+label {display: block;
+	   font-size: 1em;
+		margin-top:1em;
+		font-family: 'DIN Condensed', Arial, Helvetica, sans-serif;
+		font-weight: 300;
+		letter-spacing: .02em;}
+
+
+/* To prevent confusing widows in the table column */
+@media only screen and (max-width: 839px) {
+.table-one-left-col {
+	padding-left: 7em;
+}
+.table-two-right-col {
+	padding-left: 7em;
+}
+}
+@media only screen and (max-width: 747px) {
+.table-one-left-col {
+	padding-left: 3em;
+}
+.table-two-right-col {
+	padding-left: 3em;
+}
+}
+@media only screen and (max-width: 639px) {
+.table-one-left-col {
+	padding-left: 0em;
+}
+.table-two-right-col {
+	padding-left: 3em;
+}
+}
+
+
+
+/* ------------------------ LINK + LINK HOVER ------------------------- */
+a:link {   /* unvisited link */
+	color: black;
+}
+a:visited { /* visited link */
+	color: black;
+}
+a:hover {   /* hover over link */
+	color: #ffc53d;
+	text-decoration: underline;
+	font-weight: 500;
+	font-family: 'M+1MMedium' ,'DIN Condensed', 'Droid Sans', 'Roboto Condensed', 'Helvetica Neue Condensed', 'Helvetica', 'Arial', sans-serif;
+}
+a:active {  /* selected link */
+	color: black;
+} 
+.btn:hover {  
+background-color: #ffc53d;
+color: #ffffff;
+}
+
+/* ---Date---- */
+#dateinput {
+	font-size: 0.8em;
+	display: table;
+	width: 100%;
+
+}
+#datesize {
+	font-size: 1.3em;
+}
+#dateposition {
+	padding-left: 0em;
+}
+#timesize {
+	font-size: 1.3em;
+}
+
+/* ---Time--- */
+
+/* --------------------------- FOOTER ------------------------------ */
+footer {
+text-align: center;
+margin-top: 2em;
+margin-bottom: 2em;
+}
+#footer  {
+display: table;
+width: 100%;
+}
+footer .sitemap {
+margin: 0 2.5em;
+line-height: 1.6em;
+}
+footer .footer-logo {
+text-transform: lowercase;
+font-size: 120%;
+}
+footer .footer-ny {
+letter-spacing: .4em;
+font-size: 55%;
+line-height: 2em;
+}
+footer .copyright {
+font-size: 65%;
+margin-bottom: 3em;
+}
+
+@media only screen and (max-width: 30em) {
+footer {
+	bottom: 0;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+}
+}
+
+/* ------------------- GO BACK TO THE TOP BUTTON ------------------- */
+#to-top {
+font-size: .8em;
+position: fixed;
+right: 5px;
+bottom: 5px;
+display: inline;
+padding: .7em .8em;
+margin: 1.9em; 
+z-index: 2;
+color: white;
+opacity: .65;
+border: none;
+}
+
+/* mobile size */
+@media screen and (max-width: 500px) {
+	/* comes into effect for screens less than or equal to 320 pixels */
+	#container {
+	  width: 50%;
+	  display: block;
+	  position: relative;
+	}
+	input {
+		height: 2em;
+		width: 100%;
+		margin-left: 0em;
+	}
+	
+  }
